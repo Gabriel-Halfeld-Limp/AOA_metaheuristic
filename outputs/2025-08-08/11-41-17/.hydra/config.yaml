@@ -1,0 +1,13 @@
+aoa:
+  fitness_func_name: sphere
+  bounds:
+  - - -5.12
+    - 5.12
+  dim: 30
+  pop_size: 30
+  max_iter: 1000
+  alpha: 5
+  mu: 0.5
+  mop_max: 1
+  mop_min: 0.2
+  seed: 42
