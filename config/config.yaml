@@ -2,13 +2,13 @@ aoa:
   fitness_func: fob
   dim: 2
   ub: [500, 500] 
-  lb: [-500, 500]
+  lb: [-500, -500]
   pop_start: null
   pop_size: 30
-  max_iter: 100
+  max_iter: 1000
   seed: 10
   alpha: 5
-  mu: 0.5
+  mu: 0.499
   mop_max: 1
   mop_min: 0.2
   verbose: true
