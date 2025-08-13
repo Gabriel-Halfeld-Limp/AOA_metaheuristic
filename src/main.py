@@ -1,7 +1,5 @@
 from functions import sphere, fob
 from aoa_metaheuristic.optimizer import AOA
-from aoa_metaheuristic.optimizer_2 import AOA_2
-from aoa_metaheuristic.optimizer_3 import AOA_3
 import hydra
 from omegaconf import DictConfig
 
@@ -17,7 +15,7 @@ def main(cfg: DictConfig):
     if fitness_fn is None:
         raise ValueError(f"Função de fitness '{cfg.aoa.fitness_func}' não encontrada em FUNC_MAP")
 
-    aoa = AOA_3(
+    aoa = AOA(
         fitness_func=fitness_fn,
         dim=cfg.aoa.dim,
         lb=cfg.aoa.lb,
