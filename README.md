@@ -86,13 +86,3 @@ python src/main.py
 
 - Experiment results are saved in `results/` (images, curves, statistics in YAML/CSV).
 - Analysis and visualization scripts are in `experiments/`.
-
-## MATLAB
-
-- The original AOA implementation in MATLAB is in `src/AOA/`.
-
-## License
-
-See `src/AOA/license.txt` for details on the MATLAB code license.
-
----
