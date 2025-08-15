@@ -1,0 +1,20 @@
+aoa:
+  fitness_func: fob
+  dim: 2
+  ub: [500]
+  lb: [-500]
+  #pop_start: data/pop_start.csv
+  #pop_start: 0
+  pop_size: 85
+  max_iter: 132
+  seed: null
+  alpha: 7.628807082445761
+  mu: 0.4962391305583467
+  alpha_orig: 5
+  mu_orig: 0.499
+  alpha_opt: 8.74544
+  mu_opt: 0.49555
+  mop_max: 1
+  mop_min: 0.2
+  verbose: true
+  

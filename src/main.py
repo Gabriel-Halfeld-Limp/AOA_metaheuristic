@@ -2,6 +2,7 @@ from functions import sphere, fob
 from aoa_metaheuristic.optimizer import AOA
 import hydra
 from omegaconf import DictConfig
+import pandas as pd
 
 FUNC_MAP = {
     "sphere": sphere,
@@ -15,12 +16,13 @@ def main(cfg: DictConfig):
     if fitness_fn is None:
         raise ValueError(f"Função de fitness '{cfg.aoa.fitness_func}' não encontrada em FUNC_MAP")
 
+    #pop_start = pd.read_csv(cfg.aoa.pop_start).to_numpy()
     aoa = AOA(
         fitness_func=fitness_fn,
         dim=cfg.aoa.dim,
         lb=cfg.aoa.lb,
         ub=cfg.aoa.ub,
-        pop_start=cfg.aoa.pop_start,
+        pop_start=pd.read_csv(cfg.aoa.pop_start).to_numpy(),
         pop_size=cfg.aoa.pop_size,
         max_iter=cfg.aoa.max_iter,
         seed=cfg.aoa.seed,

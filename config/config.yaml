@@ -3,12 +3,15 @@ aoa:
   dim: 2
   ub: [500]
   lb: [-500]
-  pop_start: null
+  pop_start: data/pop_start.csv
   pop_size: 30
   max_iter: 100
   seed: null
-  alpha: 5
-  mu: 0.499
+  alpha: 9.636068599357873
+  mu: 0.49429718710507115
+  alpha_orig: 5
+  mu_orig: 0.499
   mop_max: 1
   mop_min: 0.2
   verbose: true
+  
